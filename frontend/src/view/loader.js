@@ -1,4 +1,4 @@
-import { createEl } from "../utils/utils";
+import { createEl } from "../utils/utils.js";
 
 export function loader() {
   const loader = createEl("span", { className: "loader" });

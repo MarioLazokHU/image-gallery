@@ -1,6 +1,5 @@
-import { getImage, createEl } from "../utils/utils";
-import { deleteItem } from "../controller/deleteItem";
-import { Swiper } from "swiper";
+import { getImage, createEl } from "../utils/utils.js";
+import { deleteItem } from "../controller/deleteItem.js";
 
 export async function fillSwiper() {
   const swiperWrapper = document.querySelector(".swiper-wrapper");
@@ -48,10 +47,4 @@ export async function fillSwiper() {
 
   await deleteItem();
 
-  const swiper = new Swiper(".swiper", {
-    direction: "horizontal",
-    loop: true,
-  });
-
-  swiper.update();
 }

@@ -1,6 +1,6 @@
-import Swiper from "swiper";
-import { createEl } from "../utils/utils";
-import { fillSwiper } from "../view/fillSwiper";
+
+import { createEl } from "../utils/utils.js";
+import { fillSwiper } from "../view/fillSwiper.js";
 
 export async function deleteItem() {
   const delBtns = document.querySelectorAll(".delBtn");
@@ -72,12 +72,6 @@ export async function deleteItem() {
         loaderCon.classList.remove("noLoaderCon");
         loaderCon.classList.add("loaderCon");
         fillSwiper();
-        const swiper = new Swiper(".swiper", {
-          direction: "horizontal",
-          loop: true,
-        });
-        swiper.update();
-
         setTimeout(() => {
           loaderCon.classList.add("noLoaderCon");
           loaderCon.classList.remove("loaderCon");

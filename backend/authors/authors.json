@@ -16,14 +16,6 @@
     "date": "Uploaded at:2023.06.16 00:19"
   },
   {
-    "id": 6,
-    "data": {
-      "name": "Cynthia Lazok",
-      "title": "Me and my car"
-    },
-    "date": "Uploaded at:2023.06.16 00:19"
-  },
-  {
     "id": 8,
     "data": {
       "name": "Mario Lazok",
@@ -46,5 +38,21 @@
       "title": "sadwdawf"
     },
     "date": "Uploaded at:2023.06.22 10:08"
+  },
+  {
+    "id": 13,
+    "data": {
+      "name": "Mario Lazok",
+      "title": "Portfolio site pic"
+    },
+    "date": "Uploaded at:2023.06.25 09:37"
+  },
+  {
+    "id": 14,
+    "data": {
+      "name": "Cynthia Lazok",
+      "title": "Waterfall"
+    },
+    "date": "Uploaded at:2023.06.25 09:37"
   }
 ]

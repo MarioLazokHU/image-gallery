@@ -1,4 +1,3 @@
-import Swiper from "swiper";
 import { fillSwiper } from "./fillSwiper.js";
 export function addPicFormHandler() {
   const form = document.querySelector("form");
@@ -6,7 +5,6 @@ export function addPicFormHandler() {
     e.preventDefault();
 
     const formData = new FormData(form);
-    console.log([...formData.entries()]);
 
     const reqA = await fetch("http://localhost:9000/authors/", {
       method: "POST",
@@ -19,11 +17,6 @@ export function addPicFormHandler() {
       loaderCon.classList.remove("noLoaderCon");
       loaderCon.classList.add("loaderCon");
       fillSwiper();
-      const swiper = new Swiper(".swiper", {
-        direction: "horizontal",
-        loop: true,
-      });
-      swiper.update();
       setTimeout(() => {
         loaderCon.classList.add("noLoaderCon");
         loaderCon.classList.remove("loaderCon");
