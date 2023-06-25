@@ -240,3 +240,26 @@ button:hover{
 .noLoaderCon,.noLoader{
   display: none;
 }
+
+@media screen and (max-width: 820px) {
+  img {
+    width: 320px;
+    height: 200px;
+    position: absolute;
+    top: 50px;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: none;
+  }
+  .uploadCon{
+    flex-direction: column;
+    height: 300px;
+    position: relative;
+    gap:0px;
+  }
+  form{
+    flex-direction: column;
+  }
+  .infoCon{
+    justify-content: end;
+  }
+}
