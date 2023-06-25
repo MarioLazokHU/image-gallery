@@ -20,7 +20,7 @@ export function addPicFormHandler() {
       setTimeout(() => {
         loaderCon.classList.add("noLoaderCon");
         loaderCon.classList.remove("loaderCon");
-      }, 1000);
+      }, 2000);
     }
   });
 }

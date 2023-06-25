@@ -63,11 +63,11 @@ export async function deleteItem() {
         setTimeout(() => {
           checkBox.classList.remove("checkBox");
           checkBox.classList.add("hideCheckBox");
-        }, 1000);
+        }, 2000);
 
         setTimeout(() => {
           boxCon.innerHTML = "";
-        }, 1500);
+        }, 2500);
 
         loaderCon.classList.remove("noLoaderCon");
         loaderCon.classList.add("loaderCon");
