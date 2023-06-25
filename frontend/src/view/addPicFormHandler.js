@@ -6,7 +6,7 @@ export function addPicFormHandler() {
 
     const formData = new FormData(form);
 
-    const reqA = await fetch("http://localhost:9000/authors/", {
+    const reqA = await fetch("/authors/", {
       method: "POST",
       body: formData,
     });

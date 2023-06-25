@@ -7,7 +7,7 @@ const upload = require("express-fileupload");
 const IMG_DIR = path.join(__dirname, "media");
 const DATA = path.join(__dirname, "authors", "authors.json");
 const STATIC_DIR = path.join(__dirname,"..","frontend")
-const SWIPER_DIR = path.join(__dirname, "node_modules", "swiper");
+
 
 app.use(express.json());
 app.use(upload());

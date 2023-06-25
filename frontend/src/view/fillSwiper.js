@@ -5,11 +5,11 @@ export async function fillSwiper() {
   const swiperWrapper = document.querySelector(".swiper-wrapper");
   swiperWrapper.innerHTML = "";
 
-  const reqA = await fetch("http://localhost:9000/authors/");
+  const reqA = await fetch("/authors/");
   const resA = await reqA.json();
 
   for (const result of resA) {
-    const reqB = await getImage(`http://localhost:9000/pictures/${result.id}`);
+    const reqB = await getImage(`/pictures/${result.id}`);
     const slide = createEl("div", {
       className: "swiper-slide",
     });

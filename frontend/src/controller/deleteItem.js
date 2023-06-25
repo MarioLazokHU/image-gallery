@@ -46,7 +46,7 @@ export async function deleteItem() {
       const loaderCon = document.querySelector(".noLoaderCon");
 
       const res = await fetch(
-        `http://localhost:9000/delete/${currentDelBtn.getAttribute("name")}`,
+        `/delete/${currentDelBtn.getAttribute("name")}`,
         { method: "DELETE" }
       );
 
