@@ -49,7 +49,7 @@ const minutes = String(date.getMinutes()).padStart(2, "0");
 
 const formattedDate = `Uploaded at:${year}.${month}.${day} ${hours}:${minutes}`;
 
-app.post("/authors/", (req, res) => {
+/*app.post("/authors/", (req, res) => {
   const formData = req.body;
 
   if (!formData) {
@@ -97,9 +97,9 @@ app.post("/authors/", (req, res) => {
       console.log(err);
     }
   });
-});
+});*/
 
-app.delete("/delete/:id", (req, res) => {
+/*app.delete("/delete/:id", (req, res) => {
   const id = req.params.id;
 
   fs.readFile(DATA, "utf8", (err, data) => {
@@ -143,7 +143,7 @@ app.delete("/delete/:id", (req, res) => {
       });
     });
   });
-});
+});*/
 
 app.listen(9000, () => {
   console.log("Server is runing at http://localhost:9000");
