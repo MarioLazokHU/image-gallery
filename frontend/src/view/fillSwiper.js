@@ -45,6 +45,6 @@ export async function fillSwiper() {
     swiperWrapper.prepend(slide);
   }
 
-  await deleteItem();
+ // await deleteItem();
 
 }

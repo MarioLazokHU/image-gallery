@@ -8,7 +8,7 @@ const app = document.querySelector("#app");
 
 function main() {
   app.append(createAddPic());
-  addPicFormHandler();
+  //addPicFormHandler();
   app.append(createSwiper());
   fillSwiper();
   loader();
