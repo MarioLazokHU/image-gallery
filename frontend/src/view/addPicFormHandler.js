@@ -22,5 +22,9 @@ export function addPicFormHandler() {
         loaderCon.classList.remove("loaderCon");
       }, 2000);
     }
+
+    if (reqA.status === 429){
+      alert('Try after 1 min')
+    }
   });
 }

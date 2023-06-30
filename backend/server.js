@@ -3,6 +3,7 @@ const fs = require("fs");
 const path = require("path");
 const app = express();
 const upload = require("express-fileupload");
+const rateLimit = require("express-rate-limit");
 
 const IMG_DIR = path.join(__dirname, "media");
 const DATA = path.join(__dirname, "authors", "authors.json");
@@ -49,7 +50,13 @@ const minutes = String(date.getMinutes()).padStart(2, "0");
 
 const formattedDate = `Uploaded at:${year}.${month}.${day} ${hours}:${minutes}`;
 
-/*app.post("/authors/", (req, res) => {
+const limiter = rateLimit({
+  windowMs: 1 * 60 * 1000, // 1 perc
+  max: 1, // maximum 1 képfeltöltés
+  message: "Kérlek, várj egy kicsit, mielőtt újra feltöltesz egy képet.",
+});
+
+app.post("/authors/",limiter, (req, res) => {
   const formData = req.body;
 
   if (!formData) {
@@ -97,7 +104,7 @@ const formattedDate = `Uploaded at:${year}.${month}.${day} ${hours}:${minutes}`;
       console.log(err);
     }
   });
-});*/
+});
 
 /*app.delete("/delete/:id", (req, res) => {
   const id = req.params.id;
